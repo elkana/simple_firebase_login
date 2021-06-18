@@ -48,8 +48,6 @@ Dont forget to SAVE !
 +/- 38 MBytes
 
 ---
-## References
+## Donate ?
 
-https://medium.com/firebase-developers/dive-into-firebase-auth-on-flutter-email-and-link-sign-in-e51603eb08f8
-
-https://github.com/harshit2106/Flutter-Firebase-sign-in/tree/main/lib
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/ellkana)
