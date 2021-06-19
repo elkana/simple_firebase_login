@@ -31,6 +31,9 @@ https://console.firebase.google.com/u/0/project/flutterproject-57085/settings/ge
 ```
 Dont forget to SAVE !
 
+---
+## Android Native Setup
+
 android/app/build.gradle
 ```
 apply plugin: 'com.google.gms.google-services'
