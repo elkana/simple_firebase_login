@@ -6,6 +6,9 @@ flutter create --org com.eric -i objc -a java firebase_login
 
 flutter build apk --release
 ```
+
+* choose a project in https://console.firebase.google.com/u/0/ 
+* Register new App with package `com.eric.firebase_login`
 * get file `google_services.json` at https://console.firebase.google.com/u/0/project/flutterproject-57085/overview
 * per 17 juni 21, minimum Android SDK is 23
 * drop it into `android/app`
@@ -28,6 +31,30 @@ https://console.firebase.google.com/u/0/project/flutterproject-57085/settings/ge
 ```
 Dont forget to SAVE !
 
+android/app/build.gradle
+```
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    defaultConfig {
+        minSdkVersion 23
+        multiDexEnabled true
+    }
+```
+
+android/build.gradle
+```
+buildscript {
+    repositories {
+        ...
+    }
+
+    dependencies {
+        ...
+        classpath 'com.google.gms:google-services:4.3.8'
+    }
+```
+
 * goto https://console.firebase.google.com/u/0/project/flutterproject-57085/authentication/providers
     * enable Email/Password
     * enable Google
@@ -48,6 +75,5 @@ Dont forget to SAVE !
 +/- 38 MBytes
 
 ---
-## Donate ?
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/ellkana)
